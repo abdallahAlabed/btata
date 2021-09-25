@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <title>Mantujatcom</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="منتجات حرفية , ملابس يدوية اكسسوارات , طعام , ادوات منزلية" name="keywords">
+        <meta content="المساعدة في العثور على مشترين لعدد من المتاجر و الباعة للصناعات والحرف اليدوية والمنزلية " name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="css/rtl/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Page Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+     
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">القائمة</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a class="btn" href="home.html" class="nav-item nav-link active class="btn">الصفحة الرئيسية</a>
+                            <a class="btn" href="product-list.html" class="nav-item nav-link">المنتجات</a>
+							<a class="btn" href="blogs.html" class="nav-item nav-link">مدونات</a>							
+							<a class="btn" href="wishlist.html" class="dropdown-item">المفضلة</a>
+                                  
+                                
+                        
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <a class="btn"  href="login.html"  class="dropdown-item"> دخول</a>		  
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+            <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="home.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->  
+        
+  
+        
+        <!-- Login Start -->
+        <div class="login">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">    
+                        <form class="register-form" id="register" method="POST"  autocomplete="off" >
+                            <div class="row">
+								<div class="col-md-12" > 
+                                    <label> <h3> تسجيل مستخدم جديد </h3></label>
+                                    
+                                </div>
+								<div class="col-md-12">
+                                    <label> إسم المستخدم</label>
+                                    <input class="form-control" autocomplete="off" type="text" value="" autocomplete="off" id="username" required placeholder="إسم المستخدم">
+                                </div>
+                                <div class="col-md-6">
+                                    <label> الاسم</label>
+                                    <input class="form-control" autocomplete="off" type="text" id="firstname" required placeholder="الاسم الاول">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>العائلة</label>
+                                    <input class="form-control" autocomplete="off" type="text" id="lastname" required placeholder="العائلة">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>البريد الالكتروني</label>
+                                    <input class="form-control" autocomplete="off" type="text" id="email" placeholder="البريد الالكتروني">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>رقم الهاتف</label>
+                                    <input class="form-control" autocomplete="off" type="text" id="phone" required placeholder="رقم الهاتف">
+                                </div>
+                                <div class="col-md-6">
+                                    <label> العنوان</label>
+                                    <input class="form-control" autocomplete="off" type="text" id="address" required placeholder="العنوان">
+                                </div>
+								<div class="col-md-6">
+                                    <label> عن نفسك</label>
+                                    <input class="form-control" autocomplete="off" type="text" id="Description" required placeholder="معلومات عنك">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>كلمة المرور</label>
+                                    <input class="form-control" autocomplete="off"  type="password" id="password" required placeholder="كلمة المرور">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>تاكيد كلمة المرور</label>
+                                    <input class="form-control" autocomplete="off"  type="password" id="confirm_password" required placeholder="تاكيد كلمة المرور">
+                                </div>
+								<div class="col-md-12" id="typeaccount">
+									<label>  نوع الحساب :</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" id="buyer" name="typeaccount" value="ROLE_BUYER"> &nbsp;
+										<label for="male">مشتري</label> &nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" id="salesman" name="typeaccount" value="ROLE_HANDYMAN"> &nbsp;
+										<label for="female">بائع</label>
+								</div>
+                                <div class="col-md-12">
+                                    <button class="btn">تسجيل</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-- Login End -->
+        
+        	<!-- Newsletter Start -->
+        <div class="newsletter">
+            <div class="container-fluid"></div>
+        </div>
+        <!-- Newsletter End --> 	
+		
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>تواصل</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>الاردن - عمان </p>
+                                <p><i class="fa fa-envelope"></i>mantujatcom@gmail.com</p>
+                                <p><i class="fa fa-phone"></i><span class="footer_phone_ltr"><span class="phone_ltr">+962 79 -456-7890</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>تابعنا</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href="https://www.facebook.com/mantujatcom/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83%D9%85-mantujatcom-84a008203/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/mantujatcom/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCr58v3p-qRqkweUG_xitocQ"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>معلومات الموقع</h2>
+                            <ul>
+                                <li> <a href="about_us.html">مزيد عنا  </a></li>
+                           
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>الشروط والخصوصية</h2>
+                            <ul>                         
+                               <li><a href="privacy.html">سياسة الخصوصية  </a></li>
+                                <li><a href="terms.html">الشروط و الاحكام </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- Footer End -->
+		
+				<!-- End bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        
+                    </div>
+                    <div class="col-sm-6">
+                       
+                        <span class="phone_ltr">Copyright © 2020 - Al al-Bayt University .</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End bar End -->
+		
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>
+

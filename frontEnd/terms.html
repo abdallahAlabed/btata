@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <title>Mantujatcom</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="منتجات حرفية , ملابس يدوية اكسسوارات , طعام , ادوات منزلية" name="keywords">
+        <meta content="المساعدة في العثور على مشترين لعدد من المتاجر و الباعة للصناعات والحرف اليدوية والمنزلية " name="description">
+        
+        <!-- Favicon -->
+        <!-- <script src="js/main.js" defer></script> -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+        <script>
+            window.onload=()=>{
+                if(document.cookie.length){
+                    document.getElementById('logout').style.display='inline'
+                    document.getElementById('labelLogin').style.display='none'
+                    document.getElementById('sign-up').style.display='none'
+                }
+                // else{
+                //     window.location.replace('login.html')
+                // }
+            }
+        </script>
+        <!-- CSS Libraries -->
+        <link href="css/rtl/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Page Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+     
+        
+<!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">القائمة</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a class="btn" href="home.html" class="nav-item nav-link active class="btn">الصفحة الرئيسية</a>
+							<a class="btn" href="category.html" class="dropdown-item">الاقسام</a>
+                            <a class="btn" href="product-list.html" class="nav-item nav-link">المنتجات</a>              							
+							<a class="btn" href="wishlist.html" class="dropdown-item">المفضلة</a>
+                            <a class="btn" href="my-account.html" class="dropdown-item">حسابي</a>      
+                                
+                        
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <a class="btn" id="homeLoginButton" onclick="clearSession()"  href="login.html"  class="dropdown-item">  
+                                <span id="labelLogin">دخول</span>
+                                <span id="logout" style="display: none;">تسجيل الخروج</span>
+                                
+                            </a>		  
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+            <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="home.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+							
+						
+                            <a href="register.html" class="btn cart">    
+                                التسجيل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->  
+        
+        
+        <!-- Terms Start -->
+            <div class="container-fluid pb-5">
+                <div class="pt-2">
+                    <div class="container">
+                        <h1 class="text-center"><b>الشروط <span class="primary_color">والأحكام</span></b></h1>
+                
+                        <h4 class="mt-4 mb-3"><b>المقدمة:</b></h4>
+                        <p>تدير شروط وأحكام موقع الويب القياسية هذه المكتوبة على صفحة الويب هذه استخدامك لموقعنا. سيتم تطبيق هذه الشروط بالكامل وتؤثر على استخدامك لهذا الموقع. باستخدام هذا الموقع ، فإنك توافق على قبول جميع الشروط والأحكام المكتوبة هنا. يجب ألا تستخدم هذا الموقع إذا كنت لا توافق على أي من شروط وأحكام موقع الويب القياسية هذه.
+                
+                        <h4 class="mt-4 mb-3"><b>حقوق الملكية الفكرية:</b></h4>
+                        <p>بخلاف المحتوى الذي تملكه ، بموجب هذه الشروط ، تمتلك "شركة منتجاتكم" جميع حقوق الملكية الفكرية والمواد الواردة في هذا الموقع الإلكتروني. تم منحك رخصة محدودة فقط لأغراض عرض المواد الموجودة على هذا الموقع.
+                
+                        <h4 class="mt-4 mb-3"><b>قيود:</b></h4>
+                        <p>يُمنع عليك بشكل خاص كل ما يلي:
+                
+                        <p>• نشر أي مواد موقع إلكتروني في أي وسائط أخرى ؛
+                        <p>• بيع ، والترخيص و / أو تسويق أي مواد موقع بأي شكل آخر ؛
+                        <p>• أداء و / أو عرض أي مواد من مواقع الويب بشكل علني ؛
+                        <p>• استخدام هذا الموقع بأي طريقة تضر أو قد تضر بهذا الموقع ؛
+                        <p>• استخدام هذا الموقع بأي طريقة تؤثر على وصول المستخدم إلى هذا الموقع ؛
+                        <p>• استخدام هذا الموقع خلافًا للقوانين واللوائح المعمول بها ، أو بأي شكل من الأشكال قد يتسبب في ضرر للموقع ، أو لأي شخص أو كيان تجاري ؛
+                        <p>• الانخراط في أي تنقيب عن البيانات أو جمع البيانات أو استخراج البيانات أو أي نشاط مشابه فيما يتعلق بهذا الموقع ؛
+                        <p>• استخدام هذا الموقع للانخراط في أي إعلان أو تسويق.
+                        هناك مناطق معينة في هذا الموقع محظور عليك الوصول إليها ، وقد تقوم "منتجاتكم" بتقييد وصولك إلى أي مناطق في هذا الموقع ، في أي وقت ، وفقًا لتقديرها المطلق. أي هوية مستخدم وكلمة مرور قد تكون لديكم لهذا الموقع هي سرية ويجب عليك الحفاظ على السرية كذلك.
+                
+                        <h4 class="mt-4 mb-3"><b>المحتوى الخاص بك:</b></h4>
+                        <p>في هذه الشروط والأحكام القياسية لموقع الويب ، يعني "المحتوى الخاص بك" أي معلومات أو صوت أو نص فيديو أو صور أو مواد أخرى تختار عرضها على موقع الويب هذا. من خلال عرض المحتوى الخاص بك ، فإنك تمنح "منتجاتكم" ترخيصًا غير حصري وغير قابل للإلغاء على مستوى العالم للترخيص لاستخدامه وإعادة إنتاجه وتكييفه ونشره وترجمته وتوزيعه في جميع الوسائط. يجب أن يكون المحتوى الخاص بك هو ملكك ويجب ألا يغزو حقوق أي طرف ثالث. تحتفظ "منتجاتكم" بالحق في إزالة أي من المحتوى الخاص بك من هذا الموقع في أي وقت دون إشعار.
+                
+                        <h4 class="mt-4 mb-3"><b>لا ضمانات:</b></h4>
+                        <p>يتم توفير هذا الموقع الإلكتروني "كما هو" ، مع كل العيوب ، و "منتجاتكم" لا تعبر عن أي تعهدات أو ضمانات ، من أي نوع يتعلق بهذا الموقع أو المواد الواردة في هذا الموقع. أيضًا ، لن يتم تفسير أي شيء موجود في هذا الموقع على أنه نصحك.
+                
+                        <h4 class="mt-4 mb-3"><b>المسؤولية:</b></h4>
+                        <p>لن تتحمل "منتجاتكم" ، أو أي من مسؤوليها ومديريها وموظفيها ، بأي حال من الأحوال المسؤولية عن أي شيء ينشأ عن استخدامك لهذا الموقع أو بأي شكل من الأشكال ، سواء كانت هذه المسؤولية بموجب عقد. لا تتحمل "منتجاتكم" ، بما في ذلك مسؤولوها ومديروها وموظفوها مسؤولية أي مسؤولية غير مباشرة أو تبعية أو خاصة ناشئة عن أو مرتبطة بأي شكل من الأشكال باستخدامك لهذا الموقع.
+                
+                        <h4 class="mt-4 mb-3"><b>التعويض:</b></h4>
+                        <p>أنت بموجب هذا تعوض "منتجاتكم" إلى أقصى حد من و/أو ضد أي و/أو جميع الالتزامات والتكاليف والمطالب وأسباب الدعوى والأضرار والمصروفات الناشئة بأي طريقة تتعلق بخرقك لأي من أحكام هذه الشروط.
+                
+                        <h4 class="mt-4 mb-3"><b>الاستقلالية:</b></h4>
+                        <p>إذا تبين أن أي بند من هذه الشروط غير صالح بموجب أي قانون معمول به ، فسيتم حذف هذه الأحكام دون التأثير على الأحكام المتبقية في هذا القانون.
+                
+                        <h4 class="mt-4 mb-3"><b>تعديل الشروط والأحكام:</b></h4>
+                        <p>يُسمح لـ "منتجاتكم" بمراجعة هذه الشروط في أي وقت وتعديلها حسب ما تراه مناسبًا ، وباستخدام هذا الموقع ، يُتوقع منك مراجعة هذه الشروط بشكل منتظم.
+                
+                        <h4 class="mt-4 mb-3"><b>صلاحية منتجاتكم:</b></h4>
+                        <p>يُسمح لـ "منتجاتكم" بتعيين ونقل و/أو التعاقد من الباطن على حقوقها و/أو التزاماتها بموجب هذه الشروط دون أي إشعار. ومع ذلك ، لا يُسمح لك بتعيين أو نقل أو التعاقد من الباطن على أي من حقوقك و/أو التزاماتك بموجب هذه الشروط.
+                
+                        <h4 class="mt-4 mb-3"><b>كامل الاتفاق:</b></h4>
+                        <p> تشكل هذه الشروط الاتفاقية الكاملة بين "شركة منتجاتكم للخدمات التسويقية" وبينك فيما يتعلق باستخدامك لهذا الموقع، وتحل محل جميع الاتفاقات والتفاهمات السابقة.
+                
+                        <h4 class="mt-4 mb-3"><b>القانون الواجب التطبيق والاختصاص القضائي:</b></h4>
+                        <p>تخضع هذه الشروط وتُفسر وفقًا لقوانين المملكلة الاردنية الهاشمية  ، وتُخضع للولاية القضائية للمحكمة التجارية ، الواقعة في عمان - المملكلة الاردنية الهاشمية  لحل أي نزاعات.
+                    </div>
+                </div>
+            </div>
+        <!-- Terms End -->
+        
+        	<!-- Newsletter Start -->
+        <div class="newsletter">
+            <div class="container-fluid"></div>
+        </div>
+        <!-- Newsletter End --> 	
+		
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>تواصل</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>الاردن - عمان </p>
+                                <p><i class="fa fa-envelope"></i>mantujatcom@gmail.com</p>
+                                <p><i class="fa fa-phone"></i><span class="footer_phone_ltr"><span class="phone_ltr">+962 79 -456-7890</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>تابعنا</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href="https://www.facebook.com/mantujatcom/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83%D9%85-mantujatcom-84a008203/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/mantujatcom/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCr58v3p-qRqkweUG_xitocQ"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>معلومات الموقع</h2>
+                            <ul>
+                                <li> <a href="about_us.html">مزيد عنا  </a></li>
+                           
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>الشروط والخصوصية</h2>
+                            <ul>                         
+                               <li><a href="privacy.html">سياسة الخصوصية  </a></li>
+                                <li><a href="terms.html">الشروط و الاحكام </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- Footer End -->
+		
+				<!-- End bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        
+                    </div>
+                    <div class="col-sm-6">
+                       
+                        <span class="phone_ltr">Copyright © 2020 - Al al-Bayt University .</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End bar End -->
+		
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+       
+    </body>
+</html>
+
